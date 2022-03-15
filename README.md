@@ -1,10 +1,10 @@
 # Hypnos
 
-<p>
-A simple yet highly configurable, powerful and realistic sleep plugin for <a href="https://papermc.io">PaperMC</a>.
-<img src="img/Moon_Phases.gif" width="160" height="160" style="float: right" alt="Moon"><br>
-ADad
+<p>A simple yet highly configurable, powerful and realistic sleep plugin for <a href="https://papermc.io">PaperMC</a>.
+<img src="img/Moon_Phases.gif" width="160" height="160" style="float: right" alt="Moon">
 </p>
+
+**! This plugin is not working on Spigot and issues with versions <1.17.x will not be treated.**
 
 ## Features
 
