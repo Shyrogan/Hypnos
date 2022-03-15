@@ -39,7 +39,7 @@ public record BedListener(Plugin plugin) implements Listener {
         );
 
         String msg;
-        if (playersRequired >= playersCount) {
+        if (playersInBed >= playersRequired) {
             final var value = config.getLong("night_duration.value");
             final var unit  = config.getString("night_duration.unit").toUpperCase();
 

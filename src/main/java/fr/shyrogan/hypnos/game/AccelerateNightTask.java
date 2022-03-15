@@ -30,7 +30,7 @@ public final class AccelerateNightTask extends BukkitRunnable {
         this.world = world;
         this.randomTickSpeed = world.getGameRuleValue(GameRule.RANDOM_TICK_SPEED);
         this.daylightCycle = world.getGameRuleDefault(GameRule.DO_DAYLIGHT_CYCLE);
-        final var NIGHT_DURATION_TICK = WAKING_UP_TIME - world.getFullTime();
+        final var NIGHT_DURATION_TICK = WAKING_UP_TIME - world.getTime();
         this.speed = NIGHT_DURATION_TICK / (duration.toMillis() / TICK_DURATION_MS);
         this.world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
         this.world.setGameRule(GameRule.RANDOM_TICK_SPEED, (int) (NIGHT_DURATION_TICK / speed * randomTickSpeed));
@@ -51,7 +51,7 @@ public final class AccelerateNightTask extends BukkitRunnable {
             return;
         }
         // Accelerates the night
-        world.setFullTime(world.getFullTime() + speed);
+        world.setTime(world.getTime() + speed);
     }
 
 }
