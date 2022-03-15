@@ -1,6 +1,6 @@
 # Hypnos
 
-<p float="left">
+<p float="right">
   <img src="img/Moon_Phases.gif" width="160"  alt="Moon Phases"/>
 </p>
 
