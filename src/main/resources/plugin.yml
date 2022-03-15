@@ -1,0 +1,8 @@
+name: Hypnos
+description: Modifies the sleeping behaviour of the game.
+version: 1.0
+main: fr.shyrogan.hypnos.Hypnos
+author: Shyrogan
+commands:
+  hypnos:
+    description: Displays information about the plugin. /hypnos reload to reload the plugin.

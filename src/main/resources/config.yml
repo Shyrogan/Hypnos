@@ -1,0 +1,24 @@
+# The duration of the night animation.
+# Available units: nanos, micros, millis, seconds, minutes, hours
+# ---
+# A low value is recommended for realistic results (1 to 10 seconds!)
+night_duration:
+  value: 5
+  unit: seconds
+
+# The percentage of players who actually need to be in their bed for the animation
+# to actually start.
+players_in_bed_percentage: 50 #%
+
+# Also modifies the randomTickSpeed gamerule to actually accelerate
+# stuff such as plants growth, leaf decay...
+# This gives a more realistic result.
+accelerate_rts: true
+
+# The actual messages displayed by the plugin (You can use mini message thanks to Adventure!).
+# More information about mini message: https://docs.adventure.kyori.net/minimessage/format.html
+# Set to empty if you don't want any messages.
+# Variables supported: %player_name% %player_display_name% %sleeping_count% %required_sleeping_count%
+messages:
+  player_in_bed: "%player_name% is now in bed! (%sleeping_count%/%required_sleeping_count%)"
+  skipping_night: "The night is currently slowly being skipped."
